@@ -65,8 +65,8 @@ fs.readdir(GPX_PATH, function(err, items) {
 	items.filter(extension).forEach(function(name) {
 		parseGPX(GPX_PATH + name);
 	});
-	console.log('Dist:', globalDist.toLocaleString());
-	console.log('hMa:', globalHMa.toLocaleString());
-	console.log('hMd:', globalHMd.toLocaleString());
-	console.log('Tracks:', globalCount.toLocaleString());
+	console.log('Distance: ' + globalDist.toLocaleString() + 'm');
+	console.log('EL gain: ' + globalHMa.toLocaleString() + 'm');
+	console.log('EL loss: ' + Math.abs(globalHMd).toLocaleString() + 'm');
+	console.log('Tracks: ' + globalCount.toLocaleString());
 });

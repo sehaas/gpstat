@@ -1,11 +1,21 @@
 {
-  "name": "gpstat",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+	"name": "gpstat",
+	"version": "1.0.0",
+	"description": "sum up your gpx tracks",
+	"main": "gpstat.js",
+	"scripts": {
+		"start": "node gpstat.js"
+	},
+	"author": "Sebastian Haas",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sehaas/gpstatt.git"
+	},
+	"dependencies": {
+		"@mapbox/togeojson": "github:sehaas/togeojson#fix_missing_hr",
+		"coordist": "0.0.2",
+		"d3": "^5.5.0",
+		"sqlite3": "^4.0.2"
+	}
 }

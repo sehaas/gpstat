@@ -15,7 +15,6 @@
 	"dependencies": {
 		"@mapbox/togeojson": "github:sehaas/togeojson#fix_missing_hr",
 		"coordist": "0.0.2",
-		"d3": "^5.5.0",
-		"sqlite3": "^4.0.2"
+		"d3": "^5.5.0"
 	}
 }
